@@ -10,7 +10,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { routes, footerLinks } from "@/utils/routes";
 import ContactModal from "./modals/ContactModal";
 

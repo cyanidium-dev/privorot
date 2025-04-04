@@ -8,7 +8,7 @@ import {
   ModalBody,
   ModalFooter,
   Button,
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 export default function SuccessModal({ isOpen, onClose }) {
   return (

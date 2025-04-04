@@ -9,7 +9,7 @@ import {
   Button,
   useDisclosure,
   Input,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import SuccessModal from "./SuccessModal";
 import { sendMessage } from "@/utils/sendMessage";
 
