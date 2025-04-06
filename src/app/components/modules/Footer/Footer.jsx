@@ -11,7 +11,7 @@ export default function Footer() {
           alt="heart icon"
           width="140"
           height="200"
-          className="w-full h-auto"
+          className="w-full h-auto pointer-events-none"
         />
       </div>
       <Container>
@@ -30,6 +30,7 @@ export default function Footer() {
             href="https://www.cyanidium.dev/"
             target="_blank"
             rel="noopener noreferrer"
+            className="relative z-[1]"
           >
             cyanidium.dev
           </Link>
