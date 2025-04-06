@@ -61,7 +61,7 @@ export default function BannerImgs() {
       {/* пелюстки на передньому плані */}
       <motion.div
         style={{ y: frontLeftRoseY }}
-        className="absolute top-[550px]  xs:top-[510px] right-[164px] xs:right-[161px] z-[4] w-[150px] xs:w-[200px]"
+        className="absolute top-[536px]  xs:top-[496px] left-0 z-[4] w-[150px] xs:w-[200px]"
       >
         <Image
           src="/images/hero/rose-l.webp"

@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <section className="overflow-x-clip relative">
+    <section className="overflow-x-clip relative h-[794px]">
       <BannerImgs />
       <div className="absolute z-[3] top-[448px] w-full">
         <Container>
@@ -35,7 +35,7 @@ export default function Banner() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeInAnimation({ x: -100, delay: 1.8 })}
+            variants={fadeInAnimation({ x: -100 })}
           >
             <Link href="/" className="flex w-full mb-7">
               <CustomBtn sale text="Открыть доступ к курсу" />
@@ -46,7 +46,7 @@ export default function Banner() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeInAnimation({ x: 100, delay: 2.4 })}
+            variants={fadeInAnimation({ x: 100, delay: 0.5 })}
             className="font-forum text-center text-[20px] uppercase mb-[163px]"
           >
             Пошаговый ритуал, который может всё изменить
