@@ -38,7 +38,7 @@ const forum = Forum({
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400"],
+  weight: ["300", "400", "600"],
 });
 
 const marianna = localFont({
