@@ -1,8 +1,8 @@
 const Container = ({ children }) => {
-  const maxWidth = 1280;
+  const maxWidth = 360;
 
   return (
-    <section className={`max-w-[${maxWidth}px] mx-auto p-2 xl:p-0`}>
+    <section className={`max-w-[${maxWidth}px] mx-auto px-[25px]`}>
       {children}
     </section>
   );

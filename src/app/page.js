@@ -1,12 +1,3 @@
-import Features from "./components/main/Features";
-import Hero from "./components/main/Hero";
-
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Features />
-      {/* so on... */}
-    </>
-  );
+  return <div className="h-[500px] w-full"></div>;
 }
