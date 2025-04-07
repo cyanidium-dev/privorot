@@ -11,14 +11,14 @@ export default function Banner() {
   return (
     <section className="overflow-x-clip relative h-[794px]">
       <BannerImgs />
-      <div className="absolute z-[3] top-[448px] w-full">
+      <div className="absolute z-[3] top-[408px] w-full">
         <Container>
           <motion.h2
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInAnimation({ scale: 0.8, delay: 0.7 })}
-            className="mb-7 font-marianna text-[48px] text-center"
+            className="mb-7 font-marianna text-[48px] text-center pt-[40px]"
           >
             Забери своё
           </motion.h2>

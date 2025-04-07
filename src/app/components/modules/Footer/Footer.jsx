@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="overflow-hidden pt-[113px] pb-11 relative">
+    <footer className="max-w-[500px] mx-auto overflow-hidden pt-[113px] pb-11 relative">
       <div className="absolute right-0 top-0 w-[51%]">
         <Image
           src="/icons/heart-footer.svg"

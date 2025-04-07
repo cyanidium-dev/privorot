@@ -9,6 +9,7 @@ import TitleBlock from "./TitleBlock";
 import FirstLine from "./FirstLine";
 import SecondLine from "./SecondLine";
 import CustomBtn from "../../common/CustomBtn";
+import Link from "next/link";
 
 export default function SuccessRate() {
   return (
@@ -31,7 +32,9 @@ export default function SuccessRate() {
             delay: 1.1,
           })}
         >
-          <CustomBtn text="Призови силу" />
+          <Link href="/" className="flex w-full">
+            <CustomBtn text="Призови силу" />
+          </Link>
         </motion.div>
       </Container>
     </section>

@@ -3,6 +3,7 @@ import Banner from "./components/main/Banner/Banner";
 import FirstTxtSection from "./components/main/FirstTxtSection/FirstTxtSection";
 import SuccessRate from "./components/main/SuccessRate/SuccessRate";
 import TargeTAudience from "./components/main/TargetAudience/TargetAudience";
+import VideoInstruction from "./components/main/VideoInstruction/VideoInstruction";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </div>
       <SuccessRate />
       <TargeTAudience />
+      <VideoInstruction />
     </>
   );
 }

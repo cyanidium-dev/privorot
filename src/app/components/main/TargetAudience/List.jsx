@@ -22,7 +22,7 @@ export default function List() {
         <motion.li
           variants={itemVariants}
           key={index}
-          className="w-full rounded-[4px] py-6 wf-full h-full bg-dark-to-light  border border-borederColor"
+          className="rounded-[4px] py-6 w-full h-full bg-dark-to-light  border border-borederColor"
         >
           <p
             className="text-center text-[12px] font-light leading-[1.1]"

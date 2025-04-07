@@ -22,7 +22,7 @@ export default function SuccessRateImgs() {
       <div className="absolute top-[95px] -left-[29%] w-[220px]  h-[76px] rounded-full bg-[#470808;] blur-[64.75px] supports-[backdrop-filter]:blur-[64.75px]  will-change-transform z-[1] rotate-[-154.5deg]" />
 
       <div
-        className="absolute top-[309px] left-1/2 -translate-x-1/2  w-[309px] h-[876px] rounded-full bg-[#470808;] blur-[80px] supports-[backdrop-filter]:blur-[80px]  will-change-transform z-[1] "
+        className="absolute top-[309px] left-1/2 -translate-x-1/2  w-[309px] h-[876px] rounded-full bg-[#470808] blur-[80px] supports-[backdrop-filter]:blur-[80px]  will-change-transform z-[1] "
         style={{
           background:
             "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 61, 0.30) 0%, rgba(51, 5, 10, 0.30) 100%)",
