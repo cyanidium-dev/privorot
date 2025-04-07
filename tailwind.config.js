@@ -31,7 +31,7 @@ module.exports = {
         "card-gradient":
           "linear-gradient(94deg, #36070B -14.73%, #28060A 22.87%, #9C1724 97.81%)",
         "dark-to-light":
-          "linear-gradient(93deg, #1E0202 2.35%, #480D0D00 114.91%)",
+          "linear-gradient(93deg, #1E0202 2.35%, rgba(72, 13, 13, 0.40) 114.91%)",
 
         "light-gradient":
           "linear-gradient(94deg, #FFF1E2 -4.1%, #A07946 112.18%)",

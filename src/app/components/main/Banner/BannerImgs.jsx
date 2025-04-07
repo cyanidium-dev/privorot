@@ -23,7 +23,7 @@ export default function BannerImgs() {
         className="relative top-[7px] w-full h-[676px] overflow-clip"
       >
         <div className="absolute inset-0 bg-black/20 z-[1]"></div>
-        {/* пелюстки ктроянд позаду */}
+        {/* пелюстки троянд позаду */}
         <motion.div
           style={{ y: backRoseY }}
           className="absolute top-[-120px] inset-0 z-0"
