@@ -17,10 +17,22 @@ export const fadeInAnimation = ({
   },
 });
 
-export const listVariants = {
+export const listVariants = ({ delayChildren = 0 }) => ({
   hidden: { opacity: 1 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.5 },
+    transition: {
+      staggerChildren: 0.5,
+      delayChildren: delayChildren,
+    },
+  },
+});
+
+export const itemVariants = {
+  hidden: { opacity: 0, x: 80 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5 },
   },
 };

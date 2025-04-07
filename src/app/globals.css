@@ -42,3 +42,14 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.border-gradient {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-radius: 4px; /* не працює */
+}
+
+.border-gradient {
+  border-image-source: linear-gradient(94deg, #fff1e2 -4.1%, #a07946 112.18%);
+}

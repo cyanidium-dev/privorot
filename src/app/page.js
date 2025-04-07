@@ -8,7 +8,6 @@ export default function Home() {
       <Banner />
       <FirstTxtSection />
       <About />
-      <div className="w-full h-[600px]"></div>
     </div>
   );
 }
