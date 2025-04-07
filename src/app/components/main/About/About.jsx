@@ -9,7 +9,7 @@ import AboutImgs from "./AboutImgs";
 export default function About() {
   return (
     <section
-      id="#about"
+      id="about"
       className="mb-[70px] relative z-[3] overflow-x-clip pt-[94px]"
     >
       <AboutImgs />
