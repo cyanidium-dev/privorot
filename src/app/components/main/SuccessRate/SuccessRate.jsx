@@ -28,7 +28,7 @@ export default function SuccessRate() {
           variants={fadeInAnimation({
             scale: 0.8,
 
-            delay: 1.5,
+            delay: 1.1,
           })}
         >
           <CustomBtn text="Призови силу" />

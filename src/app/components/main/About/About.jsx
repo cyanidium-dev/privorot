@@ -27,7 +27,7 @@ export default function About() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          variants={listVariants({ delayChildren: 1.5 })}
+          variants={listVariants({ delayChildren: 1.2 })}
           className="flex flex-col gap-3"
         >
           {data.map((item, index) => (

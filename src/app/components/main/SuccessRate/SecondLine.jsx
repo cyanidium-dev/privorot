@@ -9,7 +9,7 @@ export default function SecondLine() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      variants={fadeInAnimation({ y: 40, scale: 0.8, delay: 2.2 })}
+      variants={fadeInAnimation({ y: 40, scale: 0.8, delay: 1 })}
       className="border-gradient-rounded p-6 h-[261px] w-full flex flex-col justify-between mb-6 relative z-[3]"
     >
       <p className="w-[213px] text-[14px] font-light leading-[1.23]">

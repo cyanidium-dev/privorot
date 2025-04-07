@@ -13,7 +13,7 @@ export default function TitleBlock() {
           scale: 1.3,
           y: -40,
           x: -100,
-          delay: 1.5,
+          delay: 1.7,
         })}
         className="font-forum text-[32px] uppercase max-w-[189px]"
       >
@@ -27,7 +27,7 @@ export default function TitleBlock() {
           scale: 1.3,
           y: -40,
           x: 100,
-          delay: 1.5,
+          delay: 1.7,
         })}
         className="text-end font-marianna text-[24px] leading-[1.2] max-w-[99px]"
       >

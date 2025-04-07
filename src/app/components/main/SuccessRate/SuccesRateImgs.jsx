@@ -61,7 +61,7 @@ export default function SuccessRateImgs() {
             scale: 1.3,
             y: -40,
             x: -100,
-            delay: 1.5,
+            delay: 1.8,
           })}
           className=" w-[150px] "
         >
