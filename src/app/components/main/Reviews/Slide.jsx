@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Slide({ slide, i, videoIndex }) {
+export default function Slide({ slide, i, videoIndex, setVideoIndex }) {
   return (
     <div className="flex rounded-2xl overflow-hidden bg-[#A61F2C] w-full">
       {videoIndex === i ? (

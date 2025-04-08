@@ -29,7 +29,12 @@ export default function Slider() {
         >
           {data.map((slide, i) => (
             <SwiperSlide key={i} className="!w-[291px] h-[274px]">
-              <Slide slide={slide} i={i} videoIndex={videoIndex} />
+              <Slide
+                slide={slide}
+                i={i}
+                videoIndex={videoIndex}
+                setVideoIndex={setVideoIndex}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
