@@ -17,7 +17,7 @@ export default function VideoInstruction() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInAnimation({ scale: 0.8, x: -100, delay: 2 })}
-          className="pb-6 font-forum text-[32px] uppercase"
+          className="mb-6 font-forum text-[32px] uppercase"
         >
           Сделай
           <br />

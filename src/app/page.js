@@ -1,5 +1,6 @@
 import About from "./components/main/About/About";
 import Banner from "./components/main/Banner/Banner";
+import DiscountSteps from "./components/main/DiscountSteps/DiscountSteps";
 import FirstTxtSection from "./components/main/FirstTxtSection/FirstTxtSection";
 import Reviews from "./components/main/Reviews/Reviews";
 import SuccessRate from "./components/main/SuccessRate/SuccessRate";
@@ -18,6 +19,7 @@ export default function Home() {
       <TargeTAudience />
       <VideoInstruction />
       <Reviews />
+      <DiscountSteps />
     </>
   );
 }
