@@ -1,7 +1,7 @@
 export const variantsData = [
   {
     id: "victoria",
-    url: "/",
+    url: "/victoria",
     textColor: "txtColor",
     bgColor: "bgColor",
     menu: "/icons/menu.svg",

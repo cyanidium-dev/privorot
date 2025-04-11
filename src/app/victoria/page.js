@@ -1,12 +1,12 @@
 import Script from "next/script";
-import About from "./components/main/About/About";
-import Banner from "./components/main/Banner/Banner";
-import DiscountSteps from "./components/main/DiscountSteps/DiscountSteps";
-import FirstTxtSection from "./components/main/FirstTxtSection/FirstTxtSection";
-import Reviews from "./components/main/Reviews/Reviews";
-import SuccessRate from "./components/main/SuccessRate/SuccessRate";
-import TargeTAudience from "./components/main/TargetAudience/TargetAudience";
-import VideoInstruction from "./components/main/VideoInstruction/VideoInstruction";
+import About from "../components/main/About/About";
+import Banner from "../components/main/Banner/Banner";
+import DiscountSteps from "../components/main/DiscountSteps/DiscountSteps";
+import FirstTxtSection from "../components/main/FirstTxtSection/FirstTxtSection";
+import Reviews from "../components/main/Reviews/Reviews";
+import SuccessRate from "../components/main/SuccessRate/SuccessRate";
+import TargeTAudience from "../components/main/TargetAudience/TargetAudience";
+import VideoInstruction from "../components/main/VideoInstruction/VideoInstruction";
 import { variantsData } from "@/utils/variantsData";
 
 export default function Victoria() {
