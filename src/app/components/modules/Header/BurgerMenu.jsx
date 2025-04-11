@@ -1,11 +1,23 @@
-import { routes } from "@/utils/routes";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 import Link from "next/link";
+
 import { useEffect } from "react";
 
-export default function BurgerMenu({ setIsMenuOpen, isMenuOpen }) {
+export default function BurgerMenu({
+  setIsMenuOpen,
+  isMenuOpen,
+  routes,
+  homePath,
+  closeSvg,
+  menuGradient,
+  textColor,
+  heart,
+  txtGradient,
+  burgerBg,
+  lightGradient,
+}) {
   const handleClick = () => {
     setIsMenuOpen(false);
   };
@@ -52,12 +64,16 @@ export default function BurgerMenu({ setIsMenuOpen, isMenuOpen }) {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className="w-full h-screen absolute top-0  bg-darkRed overflow-auto z-20"
+          className={`w-full h-screen absolute top-0  ${burgerBg} overflow-auto z-20`}
         >
-          <div className="dark-to-light ">
+          <div className={`${menuGradient} relative z-[2]`}>
             <div className="max-w-[360px] px-[25px] w-full flex justify-between items-center pt-5 pb-[104px] mx-auto">
               {/* Брендинг */}
-              <Link href="/" className="font-forum text-[16px] uppercase">
+              <Link
+                onClick={handleClick}
+                href={homePath}
+                className={`font-forum text-[16px] uppercase text-${textColor}`}
+              >
                 Твое спасение
               </Link>
 
@@ -65,12 +81,7 @@ export default function BurgerMenu({ setIsMenuOpen, isMenuOpen }) {
                 onClick={handleClick}
                 className="p-0 bg-transparent border-none"
               >
-                <Image
-                  src="/icons/close.svg"
-                  alt="close icon"
-                  width={32}
-                  height={32}
-                />
+                <Image src={closeSvg} alt="close icon" width={32} height={32} />
               </button>
             </div>
 
@@ -80,19 +91,21 @@ export default function BurgerMenu({ setIsMenuOpen, isMenuOpen }) {
                   <li key={route.path} className="w-full p-0">
                     <Link
                       onClick={handleClick}
-                      className="w-full text-[16px] font-montserrat txt-gradient"
+                      className={`w-full text-[16px] font-montserrat ${txtGradient}`}
                       href={route.path}
                       size="lg"
                     >
                       {route.name}
                     </Link>
-                    <div className="h-[1px] w-full bg-light-gradient mt-[18px]"></div>
+                    <div
+                      className={`h-[1px] w-full ${lightGradient} mt-[18px]`}
+                    ></div>
                   </li>
                 ))}
               </ul>
-              <div className="">
+              <div className="relative">
                 <Image
-                  src="/icons/heart.svg"
+                  src={heart}
                   alt="heart"
                   width="242"
                   height="341"

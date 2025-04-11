@@ -1,8 +1,15 @@
+"use client";
 import Container from "@/utils/Container";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const currentPage = pathname === "/" ? "" : pathname.replace("/", "");
+
+  const homePath = currentPage ? `/${currentPage}` : "/";
+
   return (
     <footer className="max-w-[500px] mx-auto overflow-hidden pt-[113px] pb-11 relative">
       <div className="absolute right-0 top-0 w-[51%]">
@@ -16,7 +23,7 @@ export default function Footer() {
       </div>
       <Container>
         <Link
-          href="/"
+          href={homePath}
           className="font-forum text-[20px] uppercase mb-[42px] flex"
         >
           Твое спасение

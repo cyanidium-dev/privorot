@@ -7,10 +7,29 @@ import Container from "@/utils/Container";
 import CustomBtn from "../../common/CustomBtn";
 import Link from "next/link";
 
-export default function Banner() {
+export default function Banner({
+  hero,
+  womanClass,
+  womanImg,
+  roseBack,
+  roseBgClass,
+  bannerGradientClass,
+  roseL,
+  roseR,
+  id,
+}) {
   return (
     <section className="overflow-x-clip relative h-[794px]">
-      <BannerImgs />
+      <BannerImgs
+        hero={hero}
+        womanClass={womanClass}
+        womanImg={womanImg}
+        roseBack={roseBack}
+        roseBgClass={roseBgClass}
+        bannerGradientClass={bannerGradientClass}
+        roseL={roseL}
+        roseR={roseR}
+      />
       <div className="absolute z-[3] top-[408px] w-full">
         <Container>
           <motion.h2
@@ -38,7 +57,7 @@ export default function Banner() {
             variants={fadeInAnimation({ x: -100 })}
           >
             <Link href="/" className="flex w-full mb-7">
-              <CustomBtn sale text="Открыть доступ к курсу" />
+              <CustomBtn sale text="Открыть доступ к курсу" variant={id} />
             </Link>
           </motion.div>
 

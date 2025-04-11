@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
       lang="ru"
       className={`${forum.className} ${montserrat.className} ${marianna.className}`}
     >
-      <body className="text-txtColor bg-dark leading-[1] font-montserrat ">
+      <body className="bg-dark leading-[1] font-montserrat ">
         <Providers>
           <Header />
           <main className="max-w-[500px] mx-auto">{children}</main>

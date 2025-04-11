@@ -2,6 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles.css */
+.text-txtColor {
+  @apply text-[#FFF1E2];
+}
+.text-txtColor2 {
+  @apply text-[#E2E2FF];
+}
+.text-txtColor3 {
+  @apply text-[#FFE2F7];
+}
+
+.burger-bg {
+  @apply bg-darkRed;
+}
+
+.burger-bg-2 {
+  background: linear-gradient(0deg, #141d48 0%, #04061c 100%);
+}
+
+.burger-bg-3 {
+  background: linear-gradient(0deg, #481436 0%, #1c0414 100%);
+}
+
+.dark-to-light {
+  @apply bg-[linear-gradient(93deg,_#1E0202_2.35%,_rgba(72,_13,_13,_0.40)_114.91%)];
+}
+.dark-to-light-2 {
+  @apply bg-[linear-gradient(93deg,_#020B1E_2.35%,_rgba(13,_19,_72,_0.40)_114.91%)];
+}
+.dark-to-light-3 {
+  @apply bg-[linear-gradient(93deg,_#1E0215_2.35%,_rgba(72,_13,_55,_0.40)_114.91%)];
+}
+
+.lightGradient {
+  background: linear-gradient(94deg, #fff1e2 -4.1%, #a07946 112.18%);
+}
+
+.lightGradient-2 {
+  background: linear-gradient(94deg, #e6e2ff -4.1%, #464ea0 112.18%);
+}
+
+.lightGradient-3 {
+  background: linear-gradient(94deg, #ffe2fc -4.1%, #b633a0 112.18%);
+}
+
+.txt-gradient {
+  background: linear-gradient(94deg, #fff1e2 -4.1%, #a07946 112.18%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.txt-gradient-2 {
+  background: linear-gradient(94deg, #e6e2ff -4.1%, #464ea0 112.18%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.txt-gradient-3 {
+  background: linear-gradient(94deg, #ffe2fc -4.1%, #b633a0 112.18%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 html,
 body {
   max-width: 100vw;
@@ -39,6 +105,24 @@ a {
   height: auto;
   max-height: 1627px;
   background-image: url("/images/bg-1-2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bgFirstAndSecondBlocks-second {
+  width: 100%;
+  height: auto;
+  max-height: 1627px;
+  background-image: url("/images/bg-1-2-2v.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bgFirstAndSecondBlocks-third {
+  width: 100%;
+  height: auto;
+  max-height: 1627px;
+  background-image: url("/images/bg-1-2-3v.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }

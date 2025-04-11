@@ -1,16 +1,16 @@
 import Script from "next/script";
-import About from "./components/main/About/About";
-import Banner from "./components/main/Banner/Banner";
-import DiscountSteps from "./components/main/DiscountSteps/DiscountSteps";
-import FirstTxtSection from "./components/main/FirstTxtSection/FirstTxtSection";
-import Reviews from "./components/main/Reviews/Reviews";
-import SuccessRate from "./components/main/SuccessRate/SuccessRate";
-import TargeTAudience from "./components/main/TargetAudience/TargetAudience";
-import VideoInstruction from "./components/main/VideoInstruction/VideoInstruction";
+import About from "../components/main/About/About";
+import Banner from "../components/main/Banner/Banner";
+import DiscountSteps from "../components/main/DiscountSteps/DiscountSteps";
+import FirstTxtSection from "../components/main/FirstTxtSection/FirstTxtSection";
+import Reviews from "../components/main/Reviews/Reviews";
+import SuccessRate from "../components/main/SuccessRate/SuccessRate";
+import TargeTAudience from "../components/main/TargetAudience/TargetAudience";
+import VideoInstruction from "../components/main/VideoInstruction/VideoInstruction";
 import { variantsData } from "@/utils/variantsData";
 
-export default function Victoria() {
-  const variant = variantsData.find((v) => v.id === "victoria");
+export default function Anastasia() {
+  const variant = variantsData.find((v) => v.id === "anastasia");
 
   const { banner, firstbg, textColor, id } = variant;
 
@@ -34,7 +34,6 @@ export default function Victoria() {
         `,
         }}
       />
-
       <noscript>
         <img
           height="1"
@@ -43,14 +42,14 @@ export default function Victoria() {
           src="https://www.facebook.com/tr?id=9539340379481969&ev=PageView&noscript=1"
         />
       </noscript>
-      <div className={`min-h-screen text-${textColor} bg-dark`}>
+
+      <div className={`min-h-screen text-${textColor} bg-[#170111]`}>
         <div className={`${firstbg} w-full mx-auto h-auto`}>
           <Banner
             hero={banner.womanPhoto}
             womanImg={banner.womanImg}
             womanClass={banner.womanClass}
             roseBack={banner.roseBack}
-            roseBgClass={banner.roseBgClass}
             bannerGradientClass={banner.bannerGradientClass}
             roseL={banner.roseL}
             roseR={banner.roseR}

@@ -1,7 +1,10 @@
-export const routes = [
-  { name: "Что делает приворот?", path: "/#about" },
-  { name: "Процент успеха", path: "/#success-rate" },
-  { name: "Для кого это?", path: "/#target-audience" },
-  { name: "Отзывы", path: "/#reviews" },
-  { name: "Получить скидку", path: "/#discount-steps" },
-];
+export const getRoutesFor = (url) => {
+  const prefix = url ? `/${url}` : "";
+  return [
+    { name: "Что делает приворот?", path: `${prefix}#about` },
+    { name: "Процент успеха", path: `${prefix}#success-rate` },
+    { name: "Для кого это?", path: `${prefix}#target-audience` },
+    { name: "Отзывы", path: `${prefix}#reviews` },
+    { name: "Получить скидку", path: `${prefix}#discount-steps` },
+  ];
+};
