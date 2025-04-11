@@ -109,12 +109,10 @@ export default function Anastasia() {
         <Reviews
           heart={reviews.heart}
           gradient={reviews.gradient}
-          play={reviews.play}
           quotes={reviews.quotes}
           slideBg={reviews.slideBg}
           prev={reviews.prev}
           next={reviews.next}
-          prevClass={reviews.prevClass}
         />
         <DiscountSteps
           woman={discountSteps.woman}

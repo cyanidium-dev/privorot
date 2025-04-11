@@ -3,21 +3,18 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Navigation } from "swiper/modules";
-import Image from "next/image";
 import { data } from "./data";
-import { useState } from "react";
 import SliderNavigation from "./SliderNavigation";
 import Slide from "./Slide";
 
 export default function Slider({
   quotes,
-  play,
+  // play,
   slideBg,
   prev,
   next,
-  prevClass,
 }) {
-  const [videoIndex, setVideoIndex] = useState(null);
+  // const [videoIndex, setVideoIndex] = useState(null);
 
   return (
     <div>
@@ -39,17 +36,17 @@ export default function Slider({
               <Slide
                 slideBg={slideBg}
                 quotes={quotes}
-                play={play}
+                // play={play}
                 slide={slide}
-                i={i}
-                videoIndex={videoIndex}
-                setVideoIndex={setVideoIndex}
+                // i={i}
+                // videoIndex={videoIndex}
+                // setVideoIndex={setVideoIndex}
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <SliderNavigation prev={prev} next={next} prevClass={prevClass} />
+      <SliderNavigation prev={prev} next={next} />
     </div>
   );
 }

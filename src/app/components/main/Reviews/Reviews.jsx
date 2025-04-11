@@ -9,7 +9,6 @@ import Slider from "./Slider";
 export default function Reviews({
   heart,
   gradient,
-  play,
   quotes,
   slideBg,
   prev,
@@ -52,7 +51,6 @@ export default function Reviews({
       </Container>
       <Slider
         quotes={quotes}
-        play={play}
         slideBg={slideBg}
         prev={prev}
         next={next}

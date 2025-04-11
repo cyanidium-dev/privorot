@@ -69,7 +69,6 @@ export const variantsData = [
       quotes: "/icons/quotes.svg",
       play: "/icons/play.svg",
       prev: "/icons/prev.svg",
-      prevClass: "w-[168px] object-[0_1px]",
       next: "/icons/next.svg",
     },
     discountSteps: {
@@ -152,7 +151,6 @@ export const variantsData = [
       quotes: "/icons/quotes-2.svg",
       play: "/icons/play-2.svg",
       prev: "/icons/prev-2.svg",
-      prevClass: "w-[153px] object-[0_4px]",
       next: "/icons/next-2.svg",
     },
     discountSteps: {
@@ -235,7 +233,6 @@ export const variantsData = [
       quotes: "/icons/quotes-3.svg",
       play: "/icons/play-3.svg",
       prev: "/icons/prev-3.svg",
-      prevClass: "w-[153px] object-[0_4px]",
       next: "/icons/next-3.svg",
     },
     discountSteps: {
@@ -318,7 +315,6 @@ export const variantsData = [
       quotes: "/icons/quotes-3.svg",
       play: "/icons/play-3.svg",
       prev: "/icons/prev-3.svg",
-      prevClass: "w-[153px] object-[0_4px]",
       next: "/icons/next-3.svg",
     },
     discountSteps: {
