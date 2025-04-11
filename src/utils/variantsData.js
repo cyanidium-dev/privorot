@@ -243,7 +243,7 @@ export const variantsData = [
       heart: "/images/about-3/heart.webp",
       roseL: "/images/about-3/rose-l.png",
       roseR: "/images/about-3/rose-r.png",
-      itemClass: "borderColor bg-dark-to-light-3",
+      itemClass: "borderColor-3 bg-dark-to-light-3",
     },
     successRate: {
       gradient: "bg-[#4A3945]",
