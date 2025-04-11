@@ -7,10 +7,23 @@ import VideoInstructionImgs from "./VideoInstructionImgs";
 import CustomBtn from "../../common/CustomBtn";
 import Link from "next/link";
 
-export default function VideoInstruction() {
+export default function VideoInstruction({
+  bg,
+  gradient,
+  card,
+  roseL,
+  roseR,
+  id,
+}) {
   return (
     <section className="pb-6 relative z-[3] overflow-x-clip pt-[80px]">
-      <VideoInstructionImgs />
+      <VideoInstructionImgs
+        bg={bg}
+        gradient={gradient}
+        card={card}
+        roseL={roseL}
+        roseR={roseR}
+      />
       <Container>
         <motion.h2
           initial="hidden"
@@ -52,7 +65,7 @@ export default function VideoInstruction() {
             variants={fadeInAnimation({ x: -100, delay: 1.5 })}
           >
             <Link href="/" className="flex w-full mb-[30px]">
-              <CustomBtn text="Забери его себе" />
+              <CustomBtn variant={id} text="Забери его себе" />
             </Link>
           </motion.div>
           <motion.p

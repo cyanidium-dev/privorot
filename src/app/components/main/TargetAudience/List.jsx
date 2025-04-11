@@ -9,7 +9,7 @@ const data = [
   `Если ты хочешь его вернуть — тогда<br/>не теряй время.`,
 ];
 
-export default function List() {
+export default function List({ borderColor }) {
   return (
     <motion.ul
       initial="hidden"
@@ -22,7 +22,7 @@ export default function List() {
         <motion.li
           variants={itemVariants}
           key={index}
-          className="rounded-[4px] py-6 w-full h-full bg-dark-to-light  border border-borederColor"
+          className={`rounded-[4px] py-6 w-full h-full bg-dark-to-light  border ${borderColor}`}
         >
           <p
             className="text-center text-[12px] font-light leading-[1.1]"

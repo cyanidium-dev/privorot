@@ -12,8 +12,17 @@ import { variantsData } from "@/utils/variantsData";
 export default function Anastasia() {
   const variant = variantsData.find((v) => v.id === "anastasia");
 
-  const { banner, firstbg, textColor, id, txtSection, about, successRate } =
-    variant;
+  const {
+    banner,
+    firstbg,
+    textColor,
+    id,
+    txtSection,
+    about,
+    successRate,
+    target,
+    videoInstruction,
+  } = variant;
 
   return (
     <>
@@ -81,8 +90,20 @@ export default function Anastasia() {
           borderClass={successRate.borderClass}
           accentBg={successRate.accentBg}
         />
-        <TargeTAudience />
-        <VideoInstruction />
+        <TargeTAudience
+          roseBack={target.roseBack}
+          roseL={target.roseL}
+          mainImg={target.mainImg}
+          borderColor={target.borderColor}
+        />
+        <VideoInstruction
+          roseL={videoInstruction.roseL}
+          roseR={videoInstruction.roseR}
+          bg={videoInstruction.bg}
+          card={videoInstruction.card}
+          gradient={videoInstruction.gradient}
+          id={id}
+        />
         <Reviews />
         <DiscountSteps />
       </div>

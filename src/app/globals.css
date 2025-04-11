@@ -17,15 +17,15 @@
   @apply bg-darkRed;
 }
 
-.borederColor {
+.borderColor {
   @apply border-borederColor;
 }
 
-.borederColor-2 {
+.borderColor-2 {
   @apply border-[#9698D0];
 }
 
-.borederColor-3 {
+.borderColor-3 {
   @apply border-[#DB8BCE];
 }
 

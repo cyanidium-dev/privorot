@@ -5,7 +5,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { fadeInAnimation } from "@/utils/animation";
 import { useRef } from "react";
 
-export default function TargetAudienceImgs() {
+export default function TargetAudienceImgs({
+  mainImg,
+  roseBack,
+  roseL,
+  roseClass,
+}) {
   const roseSectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: roseSectionRef,
@@ -25,7 +30,7 @@ export default function TargetAudienceImgs() {
         className="relative w-full"
       >
         <Image
-          src="/images/target/img1.webp"
+          src={mainImg}
           alt="image with magical ritual"
           width={360}
           height={413}
@@ -33,16 +38,18 @@ export default function TargetAudienceImgs() {
         />
       </motion.div>
       {/* пелюстки на задньому фоні */}
+      {/* Tailwind safelist hint: object-[-161px_56px]
+       */}
       <motion.div
         style={{ y: backRoseY }}
         className="absolute top-[107px] inset-0 z-[2]"
       >
         <Image
-          src="/images/target/rose-back.webp"
+          src={roseBack}
           alt="rose"
           width="676"
           height="511"
-          className="mx-auto w-full h-full object-cover object-[-161px_56px]"
+          className={`mx-auto w-full h-full object-cover ${roseClass}`}
         />
       </motion.div>
 
@@ -52,7 +59,7 @@ export default function TargetAudienceImgs() {
         className="absolute top-[666px] left-0 z-[4] w-[236px]"
       >
         <Image
-          src="/images/target/rose-l.png"
+          src={roseL}
           alt="roses"
           width="260"
           height="240"

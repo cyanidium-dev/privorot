@@ -32,7 +32,7 @@ export const variantsData = [
       heart: "/images/about/heart.webp",
       roseL: "/images/about/rose-l.png",
       roseR: "/images/about/rose-r.png",
-      itemClass: "borederColor bg-dark-to-light",
+      itemClass: "borderColor bg-dark-to-light",
     },
     successRate: {
       gradient: "bg-[#470808]",
@@ -44,6 +44,20 @@ export const variantsData = [
       woman: "/images/successRate/woman.webp",
       borderClass: "border-gradient-rounded",
       accentBg: "bg-accent-gradient",
+    },
+    target: {
+      mainImg: "/images/target/img1.webp",
+      roseBack: "/images/target/rose-back.webp",
+      roseL: "/images/target-3/rose-l.png",
+      roseClass: "object-[-161px_56px]",
+      borderColor: "borderColor",
+    },
+    videoInstruction: {
+      bg: "/images/videoInstruction/bg.webp",
+      gradient: "bg-[#170101]",
+      card: "/images/videoInstruction/card.png",
+      roseL: "/images/videoInstruction/rose-l.png",
+      roseR: "/images/videoInstruction/rose-r.png",
     },
   },
   {
@@ -78,7 +92,7 @@ export const variantsData = [
       heart: "/images/about-2/heart.webp",
       roseL: "/images/about-2/rose-l.png",
       roseR: "/images/about-2/rose-r.png",
-      itemClass: "borederColor-2 bg-dark-to-light",
+      itemClass: "borderColor-2 bg-dark-to-light",
     },
     successRate: {
       gradient: "bg-[#39394A]",
@@ -90,6 +104,19 @@ export const variantsData = [
       woman: "/images/successRate-2/woman.webp",
       borderClass: "border-gradient-rounded-2",
       accentBg: "bg-accent-gradient-2",
+    },
+    target: {
+      mainImg: "/images/target-2/img1.webp",
+      roseBack: "/images/target-2/rose-back.webp",
+      roseL: "/images/target-2/rose-l.png",
+      borderColor: "borderColor-2",
+    },
+    videoInstruction: {
+      bg: "/images/videoInstruction-2/bg.webp",
+      gradient: "bg-[#010D17]",
+      card: "/images/videoInstruction-2/card.png",
+      roseL: "/images/videoInstruction-2/rose-l.png",
+      roseR: "/images/videoInstruction-2/rose-r.png",
     },
   },
   {
@@ -124,7 +151,7 @@ export const variantsData = [
       heart: "/images/about-3/heart.webp",
       roseL: "/images/about-3/rose-l.png",
       roseR: "/images/about-3/rose-r.png",
-      itemClass: "borederColor-3 bg-dark-to-light",
+      itemClass: "borderColor-3 bg-dark-to-light",
     },
     successRate: {
       gradient: "bg-[#4A3945]",
@@ -136,6 +163,19 @@ export const variantsData = [
       woman: "/images/successRate-3/woman.webp",
       borderClass: "border-gradient-rounded-3",
       accentBg: "bg-accent-gradient-3",
+    },
+    target: {
+      mainImg: "/images/target-3/img1.webp",
+      roseBack: "/images/target-3/rose-back.webp",
+      roseL: "/images/target-3/rose-l.png",
+      borderColor: "borderColor-3",
+    },
+    videoInstruction: {
+      bg: "/images/videoInstruction-3/bg.webp",
+      gradient: "bg-[#170111]",
+      card: "/images/videoInstruction-3/card.png",
+      roseL: "/images/videoInstruction-3/rose-l.png",
+      roseR: "/images/videoInstruction-3/rose-r.png",
     },
   },
   {
@@ -170,7 +210,7 @@ export const variantsData = [
       heart: "/images/about-3/heart.webp",
       roseL: "/images/about-3/rose-l.png",
       roseR: "/images/about-3/rose-r.png",
-      itemClass: "borederColor bg-dark-to-light-3",
+      itemClass: "borderColor bg-dark-to-light-3",
     },
     successRate: {
       gradient: "bg-[#4A3945]",
@@ -182,6 +222,19 @@ export const variantsData = [
       woman: "/images/successRate-4/woman.webp",
       borderClass: "border-gradient-rounded-3",
       accentBg: "bg-accent-gradient-3",
+    },
+    target: {
+      mainImg: "/images/target/img1.webp",
+      roseBack: "/images/target/rose-back.webp",
+      roseL: "/images/target-3/rose-l.png",
+      borderColor: "borderColor-3",
+    },
+    videoInstruction: {
+      bg: "/images/videoInstruction-3/bg.webp",
+      gradient: "bg-[#170111]",
+      card: "/images/videoInstruction-3/card.png",
+      roseL: "/images/videoInstruction-3/rose-l.png",
+      roseR: "/images/videoInstruction-3/rose-r.png",
     },
   },
 ];

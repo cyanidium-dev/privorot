@@ -6,13 +6,24 @@ import Container from "@/utils/Container";
 import TargetAudienceImgs from "./TargetAudienceImgs";
 import List from "./List";
 
-export default function TargeTAudience() {
+export default function TargeTAudience({
+  mainImg,
+  roseBack,
+  roseL,
+  roseClass,
+  borderColor,
+}) {
   return (
     <section
       id="target-audience"
       className="relative overflow-x-clip pb-[134px]"
     >
-      <TargetAudienceImgs />
+      <TargetAudienceImgs
+        mainImg={mainImg}
+        roseBack={roseBack}
+        roseL={roseL}
+        roseClass={roseClass}
+      />
       <Container>
         <div className="relative z-[3] mt-[-106px] ">
           <motion.h2
@@ -36,7 +47,7 @@ export default function TargeTAudience() {
             <br />
             когда он сам напишет
           </motion.h3>
-          <List />
+          <List borderColor={borderColor} />
         </div>
       </Container>
     </section>

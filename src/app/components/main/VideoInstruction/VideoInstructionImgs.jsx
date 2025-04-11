@@ -5,7 +5,13 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { fadeInAnimation } from "@/utils/animation";
 
-export default function VideoInstructionImgs() {
+export default function VideoInstructionImgs({
+  bg,
+  gradient,
+  card,
+  roseL,
+  roseR,
+}) {
   const roseSectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: roseSectionRef,
@@ -25,7 +31,7 @@ export default function VideoInstructionImgs() {
         className="absolute top-[-100px] w-full h-[789px]"
       >
         <Image
-          src="/images/videoInstruction/bg.webp"
+          src={bg}
           alt="background"
           width="360"
           height="789"
@@ -53,7 +59,12 @@ export default function VideoInstructionImgs() {
         />
       </motion.div>
       {/* градієнт */}
-      <div className="absolute top-[500px] left-1/2 -translate-x-1/2 w-[710px]  h-[493px] rounded-full bg-[#170101] blur-[79.4px] supports-[backdrop-filter]:blur-[79.4px]  will-change-transform z-[1]" />
+      {/* градієнт */}
+      {/* Tailwind safelist hint: bg-[#170111] bg-[#010D17] bg-[#170101]
+       */}
+      <div
+        className={`absolute top-[500px] left-1/2 -translate-x-1/2 w-[710px]  h-[493px] rounded-full  blur-[79.4px] supports-[backdrop-filter]:blur-[79.4px]  will-change-transform z-[1] ${gradient}`}
+      />
 
       {/* карта таро */}
       <motion.div
@@ -73,7 +84,7 @@ export default function VideoInstructionImgs() {
           className="w-[104px]"
         >
           <Image
-            src="/images/videoInstruction/card.png"
+            src={card}
             alt="taro card"
             width="260"
             height="240"
@@ -89,7 +100,7 @@ export default function VideoInstructionImgs() {
         className=" w-[314px] absolute top-[62px]   left-0 z-[4]"
       >
         <Image
-          src="/images/videoInstruction/rose-l.png"
+          src={roseL}
           alt="taro card"
           width="260"
           height="240"
@@ -101,12 +112,7 @@ export default function VideoInstructionImgs() {
         style={{ y: frontRightRoseY }}
         className="absolute top-[392px] right-0 z-[4] w-[196px]"
       >
-        <Image
-          src="/images/videoInstruction/rose-r.png"
-          alt="roses"
-          width="260"
-          height="240"
-        />
+        <Image src={roseR} alt="roses" width="260" height="240" />
       </motion.div>
     </div>
   );
