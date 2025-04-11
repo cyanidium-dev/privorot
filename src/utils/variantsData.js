@@ -252,7 +252,7 @@ export const variantsData = [
       ellipceImg: "/images/successRate-2/ellipceImg.webp",
       card: "/images/successRate-3/card.webp",
       roseR: "/images/successRate-3/rose-r.png",
-      woman: "/public/images/successRate-4/woman.webp",
+      woman: "/images/successRate-4/woman.webp",
       borderClass: "border-gradient-rounded-3",
       accentBg: "bg-accent-gradient-3",
     },
