@@ -258,7 +258,7 @@ export const variantsData = [
     },
     target: {
       mainImg: "/images/target/img1.webp",
-      roseBack: "/images/target/rose-back.webp",
+      roseBack: "/images/target-3/rose-back.webp",
       roseL: "/images/target-3/rose-l.png",
       borderColor: "borderColor-3",
     },
