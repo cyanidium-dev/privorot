@@ -55,11 +55,11 @@ export const variantsData = [
       borderColor: "borderColor",
     },
     videoInstruction: {
-      bg: "/images/videoinstruction/bg.webp",
+      bg: "/images/videoInstruction/bg.webp",
       gradient: "bg-[#170101]",
-      card: "/images/videoinstruction/card.png",
-      roseL: "/images/videoinstruction/rose-l.png",
-      roseR: "/images/videoinstruction/rose-r.png",
+      card: "/images/videoInstruction/card.png",
+      roseL: "/images/videoInstruction/rose-l.png",
+      roseR: "/images/videoInstruction/rose-r.png",
     },
     reviews: {
       heart: "/images/reviews/heart.webp",
