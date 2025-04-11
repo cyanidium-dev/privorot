@@ -20,6 +20,13 @@ export const variantsData = [
       bannerGradientClass: "top-[406px] bg-[#170101]  w-[521px] h-[783px]",
       roseL: "/images/hero/rose-l.webp",
       roseR: "/images/hero/rose-r.webp",
+      bannerTxt: "Сила любви у тебя в руках",
+      accentTxt: "Забери своё",
+      lastTxt: "Пошаговый ритуал, который может всё изменить",
+    },
+    txtSection: {
+      img: "/images/txtSection/img.png",
+      gradient: "bg-[#470808]",
     },
   },
   {
@@ -42,6 +49,13 @@ export const variantsData = [
       bannerGradientClass: "top-[358px] bg-[#010D17]  w-[662px] h-[832px]",
       roseL: "/images/hero-2/rose-l.png",
       roseR: "/images/hero-2/rose-r.png",
+      bannerTxt: "Возвращение любимого",
+      accentTxt: "Забери своё",
+      lastTxt: "100% проверенная практика, которую используют мастера",
+    },
+    txtSection: {
+      img: "/images/txtSection/img-2.png",
+      gradient: "bg-[#39394A]",
     },
   },
   {
@@ -64,6 +78,13 @@ export const variantsData = [
       bannerGradientClass: "top-[358px] bg-[#170111]  w-[662px] h-[832px]",
       roseL: "/images/hero-3/rose-l.png",
       roseR: "/images/hero-3/rose-r.png",
+      bannerTxt: "Научись притягивать",
+      accentTxt: "Ты - наслаждение",
+      lastTxt: "Курс для тех, кто хочет раскрыть свою природную магнетичность",
+    },
+    txtSection: {
+      img: "/images/txtSection/img-3.png",
+      gradient: "bg-[#4A3945]",
     },
   },
   {
@@ -86,6 +107,13 @@ export const variantsData = [
       bannerGradientClass: "top-[358px] bg-[#170111]  w-[662px] h-[832px]",
       roseL: "/images/hero-3/rose-l.png",
       roseR: "/images/hero-3/rose-r.png",
+      bannerTxt: "Секретный ритуал",
+      accentTxt: "Ввостанови любовь",
+      lastTxt: "Научись правильно делать любовный ритуал",
+    },
+    txtSection: {
+      img: "/images/txtSection/img-3.png",
+      gradient: "bg-[#4A3945]",
     },
   },
 ];

@@ -5,13 +5,15 @@ import { fadeInAnimation } from "@/utils/animation";
 import Container from "@/utils/Container";
 import Image from "next/image";
 
-export default function FirstTxtSection() {
+export default function FirstTxtSection({ img, gradient }) {
   return (
     <section className="relative overflow-x-clip  z-[3] pt-[163px]">
       {/* градієнт */}
+      {/* Tailwind safelist hint: bg-[#470808] bg-[#4A3945] bg-[#39394A]
+       */}
       <div
-        className="absolute bottom-[-24px] right-0
-        w-[220px] h-[76px] rounded-full rotatr-[-25.499deg] bg-[#470808] blur-[64.75px] supports-[backdrop-filter]:blur-[64.75px]  will-change-transform z-[1]"
+        className={`absolute bottom-[-24px] right-0
+        w-[220px] h-[76px] rounded-full rotatr-[-25.499deg] blur-[64.75px] supports-[backdrop-filter]:blur-[64.75px]  will-change-transform z-[1] ${gradient}`}
       />
       <motion.div
         initial="hidden"
@@ -21,7 +23,7 @@ export default function FirstTxtSection() {
         className="absolute w-[114px] top-[104px] right-0 z-[6]"
       >
         <Image
-          src="/images/txtSection/img.png"
+          src={img}
           alt="tarrot card"
           width="137"
           height="90"

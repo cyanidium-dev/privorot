@@ -17,6 +17,9 @@ export default function Banner({
   roseL,
   roseR,
   id,
+  bannerTxt,
+  accentTxt,
+  lastTxt,
 }) {
   return (
     <section className="overflow-x-clip relative h-[794px]">
@@ -39,7 +42,7 @@ export default function Banner({
             variants={fadeInAnimation({ scale: 0.8, delay: 0.7 })}
             className="mb-7 font-marianna text-[48px] text-center pt-[40px]"
           >
-            Забери своё
+            {accentTxt}
           </motion.h2>
           <motion.h1
             initial="hidden"
@@ -48,7 +51,7 @@ export default function Banner({
             variants={fadeInAnimation({ scale: 0.8, delay: 1.2 })}
             className="mb-12 font-forum text-[40px] xs:text-[48px] text-center uppercase"
           >
-            Сила любви у тебя в руках
+            {bannerTxt}
           </motion.h1>
           <motion.div
             initial="hidden"
@@ -68,7 +71,7 @@ export default function Banner({
             variants={fadeInAnimation({ x: 100, delay: 0.5 })}
             className="font-forum text-center text-[20px] uppercase mb-[163px]"
           >
-            Пошаговый ритуал, который может всё изменить
+            {lastTxt}
           </motion.p>
         </Container>
       </div>

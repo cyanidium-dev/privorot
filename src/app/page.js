@@ -12,7 +12,7 @@ import { variantsData } from "@/utils/variantsData";
 export default function Victoria() {
   const variant = variantsData.find((v) => v.id === "victoria");
 
-  const { banner, firstbg, textColor, id } = variant;
+  const { banner, firstbg, textColor, id, txtSection } = variant;
 
   return (
     <>
@@ -43,6 +43,7 @@ export default function Victoria() {
           src="https://www.facebook.com/tr?id=9539340379481969&ev=PageView&noscript=1"
         />
       </noscript>
+
       <div className={`min-h-screen text-${textColor} bg-dark`}>
         <div className={`${firstbg} w-full mx-auto h-auto`}>
           <Banner
@@ -55,8 +56,14 @@ export default function Victoria() {
             roseL={banner.roseL}
             roseR={banner.roseR}
             id={id}
+            bannerTxt={banner.bannerTxt}
+            accentTxt={banner.accentTxt}
+            lastTxt={banner.lastTxt}
           />
-          <FirstTxtSection />
+          <FirstTxtSection
+            img={txtSection.img}
+            gradient={txtSection.gradient}
+          />
           <About />
         </div>
         <SuccessRate />
