@@ -3,14 +3,14 @@
 import { motion } from "framer-motion";
 import { fadeInAnimation } from "@/utils/animation";
 
-export default function SecondLine() {
+export default function SecondLine({ borderClass }) {
   return (
     <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeInAnimation({ y: 40, scale: 0.8, delay: 1 })}
-      className="border-gradient-rounded p-6 h-[261px] w-full flex flex-col justify-between mb-6 relative z-[3]"
+      className={`${borderClass} p-6 h-[261px] w-full flex flex-col justify-between mb-6 relative z-[3]`}
     >
       <p className="w-[213px] text-[14px] font-light leading-[1.23]">
         Любовь — это война.

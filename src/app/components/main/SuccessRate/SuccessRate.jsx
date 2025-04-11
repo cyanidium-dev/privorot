@@ -10,17 +10,37 @@ import SecondLine from "./SecondLine";
 import CustomBtn from "../../common/CustomBtn";
 import Link from "next/link";
 
-export default function SuccessRate() {
+export default function SuccessRate({
+  gradient,
+  gradientSecond,
+  ellipceImg,
+  card,
+  roseR,
+  id,
+  woman,
+  borderClass,
+  accentBg,
+}) {
   return (
     <section
       className="pt-20 pb-[141px] relative overflow-x-clip"
       id="success-rate"
     >
-      <SuccessRateImgs />
+      <SuccessRateImgs
+        gradient={gradient}
+        gradientSecond={gradientSecond}
+        ellipceImg={ellipceImg}
+        card={card}
+        roseR={roseR}
+      />
       <Container>
         <TitleBlock />
-        <FirstLine />
-        <SecondLine />
+        <FirstLine
+          woman={woman}
+          borderClass={borderClass}
+          accentBg={accentBg}
+        />
+        <SecondLine borderClass={borderClass} />
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -32,7 +52,7 @@ export default function SuccessRate() {
           })}
         >
           <Link href="/" className="flex w-full">
-            <CustomBtn text="Призови силу" />
+            <CustomBtn text="Призови силу" variant={id} />
           </Link>
         </motion.div>
       </Container>

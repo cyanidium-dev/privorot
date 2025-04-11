@@ -12,7 +12,8 @@ import { variantsData } from "@/utils/variantsData";
 export default function Ayym() {
   const variant = variantsData.find((v) => v.id === "ayym-qunan");
 
-  const { banner, firstbg, textColor, id, txtSection, about } = variant;
+  const { banner, firstbg, textColor, id, txtSection, about, successRate } =
+    variant;
 
   return (
     <>
@@ -70,7 +71,17 @@ export default function Ayym() {
             itemClass={about.itemClass}
           />
         </div>
-        <SuccessRate />
+        <SuccessRate
+          roseR={successRate.roseR}
+          gradient={successRate.gradient}
+          gradientSecond={successRate.gradientSecond}
+          card={successRate.card}
+          ellipceImg={successRate.ellipceImg}
+          id={id}
+          woman={successRate.woman}
+          borderClass={successRate.borderClass}
+          accentBg={successRate.accentBg}
+        />
         <TargeTAudience />
         <VideoInstruction />
         <Reviews />

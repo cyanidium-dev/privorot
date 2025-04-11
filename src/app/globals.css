@@ -140,32 +140,48 @@ a {
 }
 
 .border-gradient-rounded {
-  border: 1px solid #fff1e2;
+  border: 1px solid transparent;
   border-radius: 4px;
   background: linear-gradient(
-    94deg,
-    #36070b -14.73%,
-    #28060a 22.87%,
-    #9c1724 97.81%
-  );
+        94deg,
+        #36070b 2.35%,
+        #28060a 22.87%,
+        #9c1724 114.91%
+      )
+      padding-box,
+    linear-gradient(94deg, #fff1e2 -4.1%, #a07946 112.18%) border-box;
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
 
 .border-gradient-rounded-2 {
-  border: 1px solid #e6e2ff;
+  border: 1px solid transparent;
   border-radius: 4px;
-  background: linear-gradient(93deg, #e6e2ff 2.35%, #464ea0 114.91%);
-  background-clip: padding-box, border-box;
+  background: linear-gradient(
+        94deg,
+        #071136 -14.73%,
+        #060828 22.87%,
+        #171d9c 97.81%
+      )
+      padding-box,
+    linear-gradient(93deg, #e6e2ff 2.35%, #464ea0 114.91%) border-box;
   background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
 }
 
 .border-gradient-rounded-3 {
-  border: 1px solid #ffe2fc;
+  border: 1px solid transparent;
   border-radius: 4px;
-  background: linear-gradient(93deg, #ffe2fc 2.35%, #b633a0 114.91%);
-  background-clip: padding-box, border-box;
+  background: linear-gradient(
+        94deg,
+        #360722 -14.73%,
+        #280619 22.87%,
+        #9c175e 97.81%
+      )
+      padding-box,
+    linear-gradient(93deg, #ffe2fc 2.35%, #b633a0 114.91%) border-box;
   background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
 }
 
 .slider {

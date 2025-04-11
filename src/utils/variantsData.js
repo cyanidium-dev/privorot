@@ -34,6 +34,17 @@ export const variantsData = [
       roseR: "/images/about/rose-r.png",
       itemClass: "borederColor bg-dark-to-light",
     },
+    successRate: {
+      gradient: "bg-[#470808]",
+      gradientSecond:
+        "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 61, 0.30) 0%, rgba(51, 5, 10, 0.30) 100%)",
+      ellipceImg: "/images/successRate/ellipceImg.webp",
+      card: "/images/successRate/card.webp",
+      roseR: "/images/successRate/rose-r.png",
+      woman: "/images/successRate/woman.webp",
+      borderClass: "border-gradient-rounded",
+      accentBg: "bg-accent-gradient",
+    },
   },
   {
     id: "ayym-qunan",
@@ -68,6 +79,17 @@ export const variantsData = [
       roseL: "/images/about-2/rose-l.png",
       roseR: "/images/about-2/rose-r.png",
       itemClass: "borederColor-2 bg-dark-to-light",
+    },
+    successRate: {
+      gradient: "bg-[#39394A]",
+      gradientSecond:
+        "radial-gradient(50% 50% at 50% 50%, rgba(39, 79, 255, 0.30) 0%, rgba(5, 14, 51, 0.30) 100%)",
+      ellipceImg: "/images/successRate-2/ellipceImg.webp",
+      card: "/images/successRate-2/card.webp",
+      roseR: "/images/successRate-2/rose-r.png",
+      woman: "/images/successRate-2/woman.webp",
+      borderClass: "border-gradient-rounded-2",
+      accentBg: "bg-accent-gradient-2",
     },
   },
   {
@@ -104,6 +126,17 @@ export const variantsData = [
       roseR: "/images/about-3/rose-r.png",
       itemClass: "borederColor-3 bg-dark-to-light",
     },
+    successRate: {
+      gradient: "bg-[#4A3945]",
+      gradientSecond:
+        "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 201, 0.30) 0%, rgba(51, 5, 32, 0.30) 100%)",
+      ellipceImg: "/images/successRate-2/ellipceImg.webp",
+      card: "/images/successRate-3/card.webp",
+      roseR: "/images/successRate-3/rose-r.png",
+      woman: "/images/successRate-3/woman.webp",
+      borderClass: "border-gradient-rounded-3",
+      accentBg: "bg-accent-gradient-3",
+    },
   },
   {
     id: "tamara",
@@ -137,7 +170,18 @@ export const variantsData = [
       heart: "/images/about-3/heart.webp",
       roseL: "/images/about-3/rose-l.png",
       roseR: "/images/about-3/rose-r.png",
-      itemClass: "borederColor bg-dark-to-light",
+      itemClass: "borederColor bg-dark-to-light-3",
+    },
+    successRate: {
+      gradient: "bg-[#4A3945]",
+      gradientSecond:
+        "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 201, 0.30) 0%, rgba(51, 5, 32, 0.30) 100%)",
+      ellipceImg: "/images/successRate-2/ellipceImg.webp",
+      card: "/images/successRate-3/card.webp",
+      roseR: "/images/successRate-3/rose-r.png",
+      woman: "/images/successRate-4/woman.webp",
+      borderClass: "border-gradient-rounded-3",
+      accentBg: "bg-accent-gradient-3",
     },
   },
 ];

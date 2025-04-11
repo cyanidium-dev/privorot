@@ -101,14 +101,14 @@ module.exports = {
           backgroundClip: "content-box, padding-box",
         },
 
-        ".border-gradient-rounded": {
-          border: "1px solid #FFF1E2",
-          borderRadius: "4px",
-          background:
-            "linear-gradient(94deg, #36070B -14.73%, #28060A 22.87%, #9C1724 97.81%)",
-          backgroundClip: "padding-box, border-box",
-          backgroundOrigin: "padding-box, border-box",
-        },
+        // ".border-gradient-rounded": {
+        //   border: "1px solid #FFF1E2",
+        //   borderRadius: "4px",
+        //   background:
+        //     "linear-gradient(94deg, #36070B -14.73%, #28060A 22.87%, #9C1724 97.81%)",
+        //   backgroundClip: "padding-box, border-box",
+        //   backgroundOrigin: "padding-box, border-box",
+        // },
         ".transition-default": {
           transition: "all 300ms ease-in-out",
         },

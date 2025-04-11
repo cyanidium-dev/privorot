@@ -5,7 +5,13 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { fadeInAnimation } from "@/utils/animation";
 
-export default function SuccessRateImgs() {
+export default function SuccessRateImgs({
+  gradient,
+  gradientSecond,
+  ellipceImg,
+  card,
+  roseR,
+}) {
   const roseSectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: roseSectionRef,
@@ -19,13 +25,16 @@ export default function SuccessRateImgs() {
   return (
     <div ref={roseSectionRef}>
       {/* градієнт */}
-      <div className="absolute top-[95px] -left-[29%] w-[220px]  h-[76px] rounded-full bg-[#470808;] blur-[64.75px] supports-[backdrop-filter]:blur-[64.75px]  will-change-transform z-[1] rotate-[-154.5deg]" />
+      {/* Tailwind safelist hint:  bg-[#470808] bg-[#4A3945] bg-[#39394A]
+       */}
+      <div
+        className={`absolute top-[95px] -left-[29%] w-[220px]  h-[76px] rounded-full  blur-[64.75px] supports-[backdrop-filter]:blur-[64.75px]  will-change-transform z-[1] rotate-[-154.5deg] ${gradient}`}
+      />
 
       <div
         className="absolute top-[309px] left-1/2 -translate-x-1/2  w-[309px] h-[876px] rounded-full bg-[#470808] blur-[80px] supports-[backdrop-filter]:blur-[80px]  will-change-transform z-[1] "
         style={{
-          background:
-            "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 61, 0.30) 0%, rgba(51, 5, 10, 0.30) 100%)",
+          background: gradientSecond,
         }}
       />
 
@@ -39,7 +48,7 @@ export default function SuccessRateImgs() {
           className="absolute top-[172px] z-[2] w-full"
         >
           <Image
-            src="/images/successRate/ellipceImg.webp"
+            src={ellipceImg}
             alt="image with candles"
             width="359"
             height="351"
@@ -66,7 +75,7 @@ export default function SuccessRateImgs() {
           className=" w-[150px] "
         >
           <Image
-            src="/images/successRate/card.webp"
+            src={card}
             alt="taro card"
             width="260"
             height="240"
@@ -79,12 +88,7 @@ export default function SuccessRateImgs() {
         style={{ y: frontRightRoseY }}
         className="absolute top-[468px] right-0 z-[4] w-[220px]"
       >
-        <Image
-          src="/images/successRate/rose-r.png"
-          alt="roses"
-          width="260"
-          height="240"
-        />
+        <Image src={roseR} alt="roses" width="260" height="240" />
       </motion.div>
     </div>
   );
