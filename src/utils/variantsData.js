@@ -138,11 +138,11 @@ export const variantsData = [
       borderColor: "borderColor-2",
     },
     videoInstruction: {
-      bg: "/images/videoinstruction-2/bg.webp",
+      bg: "/images/videoInstruction-2/bg.webp",
       gradient: "bg-[#010D17]",
-      card: "/images/videoinstruction-2/card.png",
-      roseL: "/images/videoinstruction-2/rose-l.png",
-      roseR: "/images/videoinstruction-2/rose-r.png",
+      card: "/images/videoInstruction-2/card.png",
+      roseL: "/images/videoInstruction-2/rose-l.png",
+      roseR: "/images/videoInstruction-2/rose-r.png",
     },
     reviews: {
       heart: "/images/reviews/heart-2.svg",
