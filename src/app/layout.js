@@ -7,6 +7,7 @@ import Header from "./components/modules/Header/Header";
 import Footer from "./components/modules/Footer/Footer";
 
 export const metadata = {
+  metadataBase: new URL("https://privorot.vercel.app/"),
   title: "Твое спасение",
   description: "Сила любви у тебя в руках",
   icons: {

@@ -20,9 +20,8 @@ export default function Header() {
   const homePath = currentPage ? `/${currentPage}` : "/";
   const routes = getRoutesFor(currentPage);
 
-  const currentVariant = variantsData.find(
-    (variant) => variant.url === pathname
-  );
+  const currentVariant =
+    variantsData.find((variant) => variant.url === pathname) || "victoria";
   const textColor = currentVariant ? currentVariant.textColor : "txtColor";
 
   useEffect(() => {
@@ -67,7 +66,12 @@ export default function Header() {
 
         {/* Іконка меню */}
         <button onClick={toggleMenu} className="p-0 bg-transparent border-none">
-          <Image src={currentVariant.menu} alt="menu" width={32} height={32} />
+          <Image
+            src={currentVariant?.menu || "/icons/menu.svg"}
+            alt="menu"
+            width={32}
+            height={32}
+          />
         </button>
       </div>
       <BurgerMenu
@@ -75,7 +79,7 @@ export default function Header() {
         setIsMenuOpen={setIsMenuOpen}
         routes={routes}
         homePath={homePath}
-        closeSvg={currentVariant.close}
+        closeSvg={currentVariant?.close || "/icons/close.svg"}
         textColor={textColor}
         menuGradient={currentVariant.menuGradient}
         heart={currentVariant.menuHeart}
