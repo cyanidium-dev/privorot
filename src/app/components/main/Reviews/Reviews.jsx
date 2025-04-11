@@ -6,13 +6,22 @@ import ReviewsImg from "./ReviewsImg";
 import { fadeInAnimation } from "@/utils/animation";
 import Slider from "./Slider";
 
-export default function Reviews() {
+export default function Reviews({
+  heart,
+  gradient,
+  play,
+  quotes,
+  slideBg,
+  prev,
+  next,
+  prevClass,
+}) {
   return (
     <section
       id="reviews"
       className="relative z-[3] overflow-x-clip pt-[207px] pb-[55px]"
     >
-      <ReviewsImg />
+      <ReviewsImg heart={heart} gradient={gradient} />
       <Container>
         <div className="flex justify-between mb-[88px] relative z-[4]">
           <motion.h2
@@ -41,7 +50,14 @@ export default function Reviews() {
           </motion.h3>
         </div>
       </Container>
-      <Slider />
+      <Slider
+        quotes={quotes}
+        play={play}
+        slideBg={slideBg}
+        prev={prev}
+        next={next}
+        prevClass={prevClass}
+      />
     </section>
   );
 }

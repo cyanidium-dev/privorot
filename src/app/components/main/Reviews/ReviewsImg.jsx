@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function ReviewsImg() {
+export default function ReviewsImg({ heart, gradient }) {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -22,7 +22,7 @@ export default function ReviewsImg() {
         className="absolute z-[2] top-[26px] right-0 w-[184px]"
       >
         <Image
-          src="/images/reviews/heart.webp"
+          src={heart}
           alt="heart image"
           width="176"
           height="252"
@@ -33,8 +33,7 @@ export default function ReviewsImg() {
       <motion.div
         style={{
           y: backY,
-          background:
-            "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 61, 0.50) 0%, rgba(51, 5, 10, 0.50) 100%)",
+          background: gradient,
         }}
         className="absolute top-[186px] right-[-59px]
         w-[316px] h-[223px] rounded-full z-[3] blur-[80px] supports-[backdrop-filter]:blur-[80px]  will-change-transform  "

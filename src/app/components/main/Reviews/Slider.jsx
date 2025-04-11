@@ -9,7 +9,14 @@ import { useState } from "react";
 import SliderNavigation from "./SliderNavigation";
 import Slide from "./Slide";
 
-export default function Slider() {
+export default function Slider({
+  quotes,
+  play,
+  slideBg,
+  prev,
+  next,
+  prevClass,
+}) {
   const [videoIndex, setVideoIndex] = useState(null);
 
   return (
@@ -30,6 +37,9 @@ export default function Slider() {
           {data.map((slide, i) => (
             <SwiperSlide key={i} className="!w-[291px] h-[274px]">
               <Slide
+                slideBg={slideBg}
+                quotes={quotes}
+                play={play}
                 slide={slide}
                 i={i}
                 videoIndex={videoIndex}
@@ -39,7 +49,7 @@ export default function Slider() {
           ))}
         </Swiper>
       </div>
-      <SliderNavigation />
+      <SliderNavigation prev={prev} next={next} prevClass={prevClass} />
     </div>
   );
 }

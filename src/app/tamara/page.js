@@ -24,6 +24,7 @@ export default function Tamara() {
     successRate,
     target,
     videoInstruction,
+    reviews,
   } = variant;
 
   return (
@@ -107,7 +108,16 @@ export default function Tamara() {
           gradient={videoInstruction.gradient}
           id={id}
         />
-        <Reviews />
+        <Reviews
+          heart={reviews.heart}
+          gradient={reviews.gradient}
+          play={reviews.play}
+          quotes={reviews.quotes}
+          slideBg={reviews.slideBg}
+          prev={reviews.prev}
+          next={reviews.next}
+          prevClass={reviews.prevClass}
+        />
         <DiscountSteps />
       </div>
     </>

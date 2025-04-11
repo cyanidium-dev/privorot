@@ -48,7 +48,7 @@ export const variantsData = [
     target: {
       mainImg: "/images/target/img1.webp",
       roseBack: "/images/target/rose-back.webp",
-      roseL: "/images/target-3/rose-l.png",
+      roseL: "/images/target/rose-l.png",
       roseClass: "object-[-161px_56px]",
       borderColor: "borderColor",
     },
@@ -58,6 +58,17 @@ export const variantsData = [
       card: "/images/videoInstruction/card.png",
       roseL: "/images/videoInstruction/rose-l.png",
       roseR: "/images/videoInstruction/rose-r.png",
+    },
+    reviews: {
+      heart: "/images/reviews/heart.webp",
+      gradient:
+        "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 61, 0.50) 0%, rgba(51, 5, 10, 0.50) 100%)",
+      slideBg: "bg-[#A61F2C]",
+      quotes: "/icons/quotes.svg",
+      play: "/icons/play.svg",
+      prev: "/icons/prev.svg",
+      prevClass: "w-[168px] object-[0_1px]",
+      next: "/icons/next.svg",
     },
   },
   {
@@ -118,6 +129,17 @@ export const variantsData = [
       roseL: "/images/videoInstruction-2/rose-l.png",
       roseR: "/images/videoInstruction-2/rose-r.png",
     },
+    reviews: {
+      heart: "/images/reviews/heart-2.svg",
+      gradient:
+        "radial-gradient(50% 50% at 50% 50%, rgba(39, 68, 255, 0.50) 0%, rgba(5, 10, 51, 0.50) 100%)",
+      slideBg: "bg-[#2851B7]",
+      quotes: "/icons/quotes-2.svg",
+      play: "/icons/play-2.svg",
+      prev: "/icons/prev-2.svg",
+      prevClass: "w-[153px] object-[0_4px]",
+      next: "/icons/next-2.svg",
+    },
   },
   {
     id: "anastasia",
@@ -177,6 +199,17 @@ export const variantsData = [
       roseL: "/images/videoInstruction-3/rose-l.png",
       roseR: "/images/videoInstruction-3/rose-r.png",
     },
+    reviews: {
+      heart: "/images/reviews/heart-3.webp",
+      gradient:
+        " radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 198, 0.50) 0%, rgba(51, 5, 27, 0.50) 100%)",
+      slideBg: "bg-[#CB3C92]",
+      quotes: "/icons/quotes-3.svg",
+      play: "/icons/play-3.svg",
+      prev: "/icons/prev-3.svg",
+      prevClass: "w-[153px] object-[0_4px]",
+      next: "/icons/next-3.svg",
+    },
   },
   {
     id: "tamara",
@@ -235,6 +268,17 @@ export const variantsData = [
       card: "/images/videoInstruction-3/card.png",
       roseL: "/images/videoInstruction-3/rose-l.png",
       roseR: "/images/videoInstruction-3/rose-r.png",
+    },
+    reviews: {
+      heart: "/images/reviews/heart-3.webp",
+      gradient:
+        " radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 198, 0.50) 0%, rgba(51, 5, 27, 0.50) 100%)",
+      slideBg: "bg-[#CB3C92]",
+      quotes: "/icons/quotes-3.svg",
+      play: "/icons/play-3.svg",
+      prev: "/icons/prev-3.svg",
+      prevClass: "w-[153px] object-[0_4px]",
+      next: "/icons/next-3.svg",
     },
   },
 ];

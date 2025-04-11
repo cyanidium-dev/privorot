@@ -1,19 +1,21 @@
 import Image from "next/image";
 
-export default function SliderNavigation() {
+export default function SliderNavigation({ prev, next, prevClass }) {
   return (
     <div className="flex justify-center gap-6 mt-6">
+      {/* Tailwind safelist hint: w-[168px] object-[0_1px] w-[153px] object-[0_4px]
+       */}
       <button className="prev-btn w-[42px] h-[42px] rounded-full flex items-center justify-center border overflow-hidden">
         <Image
-          src="/icons/prev.svg"
+          src={prev}
           alt="previous icon"
           width="88"
           height="88"
-          className="w-[168px] h-auto max-w-[400px] object-[0_1px]"
+          className={`h-auto max-w-[400px]  ${prevClass}`}
         />
       </button>
       <button className="next-btn w-[42px] h-[42px] rounded-full flex items-center justify-center">
-        <Image src="/icons/next.svg" alt="next icon" width="42" height="42" />
+        <Image src={next} alt="next icon" width="42" height="42" />
       </button>
     </div>
   );

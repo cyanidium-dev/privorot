@@ -1,8 +1,18 @@
 import Image from "next/image";
 
-export default function Slide({ slide, i, videoIndex, setVideoIndex }) {
+export default function Slide({
+  slide,
+  i,
+  videoIndex,
+  setVideoIndex,
+  slideBg,
+  quotes,
+  play,
+}) {
   return (
-    <div className="flex rounded-2xl overflow-hidden bg-[#A61F2C] w-full">
+    <div className={`flex rounded-2xl overflow-hidden ${slideBg} w-full`}>
+      {/* Tailwind safelist hint: bg-[#A61F2C] bg-[#CB3C92] bg-[#2851B7]
+       */}
       {videoIndex === i ? (
         <div className="relative w-[291px] h-[274px]">
           <iframe
@@ -19,7 +29,7 @@ export default function Slide({ slide, i, videoIndex, setVideoIndex }) {
         <>
           <div className="w-[110px] h-[274px]  shrink-0 relative">
             <Image
-              src="/icons/quotes.svg"
+              src={quotes}
               alt="icon"
               width="36"
               height="40"
@@ -30,7 +40,7 @@ export default function Slide({ slide, i, videoIndex, setVideoIndex }) {
               onClick={() => setVideoIndex(i)}
               className="absolute top-[111px] right-[-25px]"
             >
-              <Image src="/icons/play.svg" alt="icon" width="44" height="44" />
+              <Image src={play} alt="icon" width="44" height="44" />
             </button>
 
             <div className="rounded-l-2xl overflow-hidden h-full w-full">
