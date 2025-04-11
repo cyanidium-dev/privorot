@@ -1,5 +1,6 @@
 "use client";
 import Container from "@/utils/Container";
+import { variantsData } from "@/utils/variantsData";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,11 +11,21 @@ export default function Footer() {
 
   const homePath = currentPage ? `/${currentPage}` : "/";
 
+  const currentVariant =
+    variantsData.find((variant) => variant.url === pathname) || "victoria";
+  const textColor = currentVariant ? currentVariant.textColor : "txtColor";
+  const bgColor = currentVariant ? currentVariant.bgColor : "bgColor";
+  const heart = currentVariant
+    ? currentVariant.footerHeart
+    : "/icons/heart-footer.svg";
+
   return (
-    <footer className="max-w-[500px] mx-auto overflow-hidden pt-[113px] pb-11 relative">
+    <footer
+      className={`max-w-[500px] mx-auto overflow-hidden pt-[113px] pb-11 relative text-${textColor} bg-${bgColor}`}
+    >
       <div className="absolute right-0 top-0 w-[51%]">
         <Image
-          src="/icons/heart-footer.svg"
+          src={heart}
           alt="heart icon"
           width="140"
           height="200"

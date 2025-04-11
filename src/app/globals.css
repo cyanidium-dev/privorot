@@ -13,6 +13,16 @@
   @apply text-[#FFE2F7];
 }
 
+.bg-bgColor {
+  @apply bg-dark;
+}
+.bg-bgColor2 {
+  @apply bg-[#010D17];
+}
+.bg-bgColor3 {
+  @apply bg-[#170111];
+}
+
 .burger-bg {
   @apply bg-darkRed;
 }
