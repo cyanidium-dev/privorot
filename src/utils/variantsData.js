@@ -193,11 +193,11 @@ export const variantsData = [
       borderColor: "borderColor-3",
     },
     videoInstruction: {
-      bg: "/images/videoInstruction-3/bg.webp",
+      bg: "/images/videoinstruction-3/bg.webp",
       gradient: "bg-[#170111]",
-      card: "/images/videoInstruction-3/card.png",
-      roseL: "/images/videoInstruction-3/rose-l.png",
-      roseR: "/images/videoInstruction-3/rose-r.png",
+      card: "/images/videoinstruction-3/card.png",
+      roseL: "/images/videoinstruction-3/rose-l.png",
+      roseR: "/images/videoinstruction-3/rose-r.png",
     },
     reviews: {
       heart: "/images/reviews/heart-3.webp",
@@ -265,9 +265,9 @@ export const variantsData = [
     videoInstruction: {
       bg: "/images/videoInstruction-3/bg.webp",
       gradient: "bg-[#170111]",
-      card: "/images/videoInstruction-3/card.png",
-      roseL: "/images/videoInstruction-3/rose-l.png",
-      roseR: "/images/videoInstruction-3/rose-r.png",
+      card: "/images/videoinstruction-3/card.png",
+      roseL: "/images/videoinstruction-3/rose-l.png",
+      roseR: "/images/videoinstruction-3/rose-r.png",
     },
     reviews: {
       heart: "/images/reviews/heart-3.webp",
