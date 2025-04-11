@@ -7,13 +7,31 @@ import DiscountStepsImgs from "./DiscountStepsImgs";
 import CustomBtn from "../../common/CustomBtn";
 import Link from "next/link";
 
-export default function DiscountSteps() {
+export default function DiscountSteps({
+  bg,
+  roseBack,
+  radialGradient,
+  gradient,
+  woman,
+  rose,
+  roseL,
+  id,
+  borderColor,
+}) {
   return (
     <section
       id="discount-steps"
       className="relative overflow-x-clip pt-[207px] pb-[137px] z-[5]"
     >
-      <DiscountStepsImgs />
+      <DiscountStepsImgs
+        bg={bg}
+        rose={rose}
+        roseBack={roseBack}
+        radialGradient={radialGradient}
+        roseL={roseL}
+        gradient={gradient}
+        woman={woman}
+      />
       <Container>
         <motion.h2
           initial="hidden"
@@ -33,7 +51,7 @@ export default function DiscountSteps() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInAnimation({ x: -100, delay: 1.2 })}
-          className="rounded-[4px] h-[69px] w-full flex justify-center items-center bg-dark-to-light  border border-borederColor mb-5"
+          className={`rounded-[4px] h-[69px] w-full flex justify-center items-center bg-dark-to-light  border ${borderColor} mb-5`}
         >
           <p className="text-[48px] uppercase">20</p>
         </motion.div>
@@ -53,7 +71,7 @@ export default function DiscountSteps() {
           variants={fadeInAnimation({ scale: 1.3, delay: 2 })}
         >
           <Link href="/" className="flex w-full mb-7">
-            <CustomBtn sale text="Забрать доступ" />
+            <CustomBtn variant={id} sale text="Забрать доступ" />
           </Link>
         </motion.div>
         <motion.p

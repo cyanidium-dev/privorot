@@ -23,6 +23,7 @@ export default function Victoria() {
     target,
     videoInstruction,
     reviews,
+    discountSteps,
   } = variant;
 
   return (
@@ -118,7 +119,17 @@ export default function Victoria() {
           next={reviews.next}
           prevClass={reviews.prevClass}
         />
-        <DiscountSteps />
+        <DiscountSteps
+          woman={discountSteps.woman}
+          bg={discountSteps.bg}
+          radialGradient={discountSteps.radialGradient}
+          roseBack={discountSteps.roseBack}
+          rose={discountSteps.rose}
+          roseL={discountSteps.roseL}
+          gradient={discountSteps.gradient}
+          id={id}
+          borderColor={discountSteps.borderColor}
+        />
       </div>
     </>
   );

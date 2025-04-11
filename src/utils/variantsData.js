@@ -25,7 +25,7 @@ export const variantsData = [
       lastTxt: "Пошаговый ритуал, который может всё изменить",
     },
     txtSection: {
-      img: "/images/txtSection/img.png",
+      img: "/images/txt-section/img.png",
       gradient: "bg-[#470808]",
     },
     about: {
@@ -38,10 +38,10 @@ export const variantsData = [
       gradient: "bg-[#470808]",
       gradientSecond:
         "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 61, 0.30) 0%, rgba(51, 5, 10, 0.30) 100%)",
-      ellipceImg: "/images/successRate/ellipceImg.webp",
-      card: "/images/successRate/card.webp",
-      roseR: "/images/successRate/rose-r.png",
-      woman: "/images/successRate/woman.webp",
+      ellipceImg: "/images/success-rate/ellipceImg.webp",
+      card: "/images/success-rate/card.webp",
+      roseR: "/images/success-rate/rose-r.png",
+      woman: "/images/success-rate/woman.webp",
       borderClass: "border-gradient-rounded",
       accentBg: "bg-accent-gradient",
     },
@@ -53,11 +53,11 @@ export const variantsData = [
       borderColor: "borderColor",
     },
     videoInstruction: {
-      bg: "/images/videoInstruction/bg.webp",
+      bg: "/images/videoinstruction/bg.webp",
       gradient: "bg-[#170101]",
-      card: "/images/videoInstruction/card.png",
-      roseL: "/images/videoInstruction/rose-l.png",
-      roseR: "/images/videoInstruction/rose-r.png",
+      card: "/images/videoinstruction/card.png",
+      roseL: "/images/videoinstruction/rose-l.png",
+      roseR: "/images/videoinstruction/rose-r.png",
     },
     reviews: {
       heart: "/images/reviews/heart.webp",
@@ -69,6 +69,17 @@ export const variantsData = [
       prev: "/icons/prev.svg",
       prevClass: "w-[168px] object-[0_1px]",
       next: "/icons/next.svg",
+    },
+    discountSteps: {
+      bg: "/images/discount-steps/bg.webp",
+      roseBack: "/images/discount-steps/rose-bg.webp",
+      radialGradient:
+        "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 61, 0.50) 0%, rgba(51, 5, 10, 0.50) 100%)",
+      gradient: "bg-[#170101]",
+      woman: "/images/discount-steps/woman.webp",
+      rose: "/images/discount-steps/rose.png",
+      roseL: "/images/discount-steps/rose-l.png",
+      borderColor: "borderColor",
     },
   },
   {
@@ -96,7 +107,7 @@ export const variantsData = [
       lastTxt: "100% проверенная практика, которую используют мастера",
     },
     txtSection: {
-      img: "/images/txtSection/img-2.png",
+      img: "/images/txt-section/img-2.png",
       gradient: "bg-[#39394A]",
     },
     about: {
@@ -109,10 +120,10 @@ export const variantsData = [
       gradient: "bg-[#39394A]",
       gradientSecond:
         "radial-gradient(50% 50% at 50% 50%, rgba(39, 79, 255, 0.30) 0%, rgba(5, 14, 51, 0.30) 100%)",
-      ellipceImg: "/images/successRate-2/ellipceImg.webp",
-      card: "/images/successRate-2/card.webp",
-      roseR: "/images/successRate-2/rose-r.png",
-      woman: "/images/successRate-2/woman.webp",
+      ellipceImg: "/images/success-rate-2/ellipceImg.webp",
+      card: "/images/success-rate-2/card.webp",
+      roseR: "/images/success-rate-2/rose-r.png",
+      woman: "/images/success-rate-2/woman.webp",
       borderClass: "border-gradient-rounded-2",
       accentBg: "bg-accent-gradient-2",
     },
@@ -123,11 +134,11 @@ export const variantsData = [
       borderColor: "borderColor-2",
     },
     videoInstruction: {
-      bg: "/images/videoInstruction-2/bg.webp",
+      bg: "/images/videoinstruction-2/bg.webp",
       gradient: "bg-[#010D17]",
-      card: "/images/videoInstruction-2/card.png",
-      roseL: "/images/videoInstruction-2/rose-l.png",
-      roseR: "/images/videoInstruction-2/rose-r.png",
+      card: "/images/videoinstruction-2/card.png",
+      roseL: "/images/videoinstruction-2/rose-l.png",
+      roseR: "/images/videoinstruction-2/rose-r.png",
     },
     reviews: {
       heart: "/images/reviews/heart-2.svg",
@@ -139,6 +150,17 @@ export const variantsData = [
       prev: "/icons/prev-2.svg",
       prevClass: "w-[153px] object-[0_4px]",
       next: "/icons/next-2.svg",
+    },
+    discountSteps: {
+      bg: "/images/discount-steps-2/bg.webp",
+      roseBack: "/images/discount-steps-2/rose-bg.webp",
+      radialGradient:
+        "radial-gradient(50% 50% at 50% 50%, rgba(39, 68, 255, 0.50) 0%, rgba(5, 10, 51, 0.50) 100%)",
+      gradient: "bg-[#010D17]",
+      woman: "/images/discount-steps-2/woman.webp",
+      rose: "/images/discount-steps-2/rose.png",
+      roseL: "/images/discount-steps-2/rose-l.png",
+      borderColor: "borderColor-2",
     },
   },
   {
@@ -166,7 +188,7 @@ export const variantsData = [
       lastTxt: "Курс для тех, кто хочет раскрыть свою природную магнетичность",
     },
     txtSection: {
-      img: "/images/txtSection/img-3.png",
+      img: "/images/txt-section/img-3.png",
       gradient: "bg-[#4A3945]",
     },
     about: {
@@ -179,10 +201,10 @@ export const variantsData = [
       gradient: "bg-[#4A3945]",
       gradientSecond:
         "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 201, 0.30) 0%, rgba(51, 5, 32, 0.30) 100%)",
-      ellipceImg: "/images/successRate-2/ellipceImg.webp",
-      card: "/images/successRate-3/card.webp",
-      roseR: "/images/successRate-3/rose-r.png",
-      woman: "/images/successRate-3/woman.webp",
+      ellipceImg: "/images/success-rate-2/ellipceImg.webp",
+      card: "/images/success-rate-3/card.webp",
+      roseR: "/images/success-rate-3/rose-r.png",
+      woman: "/images/success-rate-3/woman.webp",
       borderClass: "border-gradient-rounded-3",
       accentBg: "bg-accent-gradient-3",
     },
@@ -210,6 +232,17 @@ export const variantsData = [
       prevClass: "w-[153px] object-[0_4px]",
       next: "/icons/next-3.svg",
     },
+    discountSteps: {
+      bg: "/images/discount-steps-3/bg.webp",
+      roseBack: "/images/discount-steps-3/rose-bg.webp",
+      radialGradient:
+        "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 198, 0.50) 0%, rgba(51, 5, 27, 0.50) 100%)",
+      gradient: "bg-[#170111]",
+      woman: "/images/discount-steps-3/woman.webp",
+      rose: "/images/discount-steps-3/rose.png",
+      roseL: "/images/discount-steps-3/rose-l.png",
+      borderColor: "borderColor-3",
+    },
   },
   {
     id: "tamara",
@@ -236,7 +269,7 @@ export const variantsData = [
       lastTxt: "Научись правильно делать любовный ритуал",
     },
     txtSection: {
-      img: "/images/txtSection/img-3.png",
+      img: "/images/txt-section/img-3.png",
       gradient: "bg-[#4A3945]",
     },
     about: {
@@ -249,10 +282,10 @@ export const variantsData = [
       gradient: "bg-[#4A3945]",
       gradientSecond:
         "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 201, 0.30) 0%, rgba(51, 5, 32, 0.30) 100%)",
-      ellipceImg: "/images/successRate-2/ellipceImg.webp",
-      card: "/images/successRate-3/card.webp",
-      roseR: "/images/successRate-3/rose-r.png",
-      woman: "/images/successRate-4/woman.webp",
+      ellipceImg: "/images/success-rate-2/ellipceImg.webp",
+      card: "/images/success-rate-3/card.webp",
+      roseR: "/images/success-rate-3/rose-r.png",
+      woman: "/images/success-rate-4/woman.webp",
       borderClass: "border-gradient-rounded-3",
       accentBg: "bg-accent-gradient-3",
     },
@@ -263,7 +296,7 @@ export const variantsData = [
       borderColor: "borderColor-3",
     },
     videoInstruction: {
-      bg: "/images/videoInstruction-3/bg.webp",
+      bg: "/images/videoinstruction-3/bg.webp",
       gradient: "bg-[#170111]",
       card: "/images/videoinstruction-3/card.png",
       roseL: "/images/videoinstruction-3/rose-l.png",
@@ -279,6 +312,17 @@ export const variantsData = [
       prev: "/icons/prev-3.svg",
       prevClass: "w-[153px] object-[0_4px]",
       next: "/icons/next-3.svg",
+    },
+    discountSteps: {
+      bg: "/images/discount-steps-3/bg.webp",
+      roseBack: "/images/discount-steps-3/rose-bg.webp",
+      radialGradient:
+        "radial-gradient(50% 50% at 50% 50%, rgba(255, 39, 198, 0.50) 0%, rgba(51, 5, 27, 0.50) 100%)",
+      gradient: "bg-[#170111]",
+      woman: "/images/discount-steps-4/woman.webp",
+      rose: "/images/discount-steps-3/rose.png",
+      roseL: "/images/discount-steps-3/rose-l.png",
+      borderColor: "borderColor-3",
     },
   },
 ];
