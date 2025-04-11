@@ -28,6 +28,12 @@ export const variantsData = [
       img: "/images/txtSection/img.png",
       gradient: "bg-[#470808]",
     },
+    about: {
+      heart: "/images/about/heart.webp",
+      roseL: "/images/about/rose-l.png",
+      roseR: "/images/about/rose-r.png",
+      itemClass: "borederColor bg-dark-to-light",
+    },
   },
   {
     id: "ayym-qunan",
@@ -56,6 +62,12 @@ export const variantsData = [
     txtSection: {
       img: "/images/txtSection/img-2.png",
       gradient: "bg-[#39394A]",
+    },
+    about: {
+      heart: "/images/about-2/heart.webp",
+      roseL: "/images/about-2/rose-l.png",
+      roseR: "/images/about-2/rose-r.png",
+      itemClass: "borederColor-2 bg-dark-to-light",
     },
   },
   {
@@ -86,6 +98,12 @@ export const variantsData = [
       img: "/images/txtSection/img-3.png",
       gradient: "bg-[#4A3945]",
     },
+    about: {
+      heart: "/images/about-3/heart.webp",
+      roseL: "/images/about-3/rose-l.png",
+      roseR: "/images/about-3/rose-r.png",
+      itemClass: "borederColor-3 bg-dark-to-light",
+    },
   },
   {
     id: "tamara",
@@ -114,6 +132,12 @@ export const variantsData = [
     txtSection: {
       img: "/images/txtSection/img-3.png",
       gradient: "bg-[#4A3945]",
+    },
+    about: {
+      heart: "/images/about-3/heart.webp",
+      roseL: "/images/about-3/rose-l.png",
+      roseR: "/images/about-3/rose-r.png",
+      itemClass: "borederColor bg-dark-to-light",
     },
   },
 ];

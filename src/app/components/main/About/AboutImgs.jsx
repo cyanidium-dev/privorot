@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function AboutImgs() {
+export default function AboutImgs({ heart, roseL, roseR }) {
   const roseSectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: roseSectionRef,
@@ -22,7 +22,7 @@ export default function AboutImgs() {
         className="absolute top-[-82px] left-0 w-[53%]"
       >
         <Image
-          src="/images/about/heart.webp"
+          src={heart}
           alt="heart image"
           width="264"
           height="377"
@@ -36,7 +36,7 @@ export default function AboutImgs() {
         className="absolute top-[52px] left-0 z-[4] w-[164px]"
       >
         <Image
-          src="/images/about/rose-l.png"
+          src={roseL}
           alt="roses"
           width="260"
           height="240"
@@ -48,12 +48,7 @@ export default function AboutImgs() {
         style={{ y: frontRightRoseY }}
         className="absolute top-[344px] right-[0px] z-[4] w-[180px]"
       >
-        <Image
-          src="/images/about/rose-r.png"
-          alt="roses"
-          width="260"
-          height="240"
-        />
+        <Image src={roseR} alt="roses" width="260" height="240" />
       </motion.div>
     </div>
   );

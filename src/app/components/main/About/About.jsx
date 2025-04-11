@@ -6,13 +6,15 @@ import { data } from "./data";
 import { fadeInAnimation, itemVariants, listVariants } from "@/utils/animation";
 import AboutImgs from "./AboutImgs";
 
-export default function About() {
+export default function About({ heart, rosel, roseR, itemClass }) {
   return (
     <section
       id="about"
       className="mb-[70px] relative z-[3] overflow-x-clip pt-[94px]"
     >
-      <AboutImgs />
+      {/* Tailwind safelist hint:
+       */}
+      <AboutImgs roseR={roseR} roseL={rosel} heart={heart} />
       <Container>
         <motion.h3
           initial="hidden"
@@ -34,7 +36,7 @@ export default function About() {
             <motion.li
               variants={itemVariants}
               key={index}
-              className="w-full rounded-[4px] py-6 h-full  bg-dark-to-light  border-[1.5px] border-borederColor relative z-0"
+              className={`w-full rounded-[4px] py-6 h-full border-[1.5px] relative z-0 ${itemClass}`}
             >
               <p
                 className="text-center text-[14px] font-light leading-[1.1]"

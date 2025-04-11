@@ -12,7 +12,7 @@ import { variantsData } from "@/utils/variantsData";
 export default function Victoria() {
   const variant = variantsData.find((v) => v.id === "victoria");
 
-  const { banner, firstbg, textColor, id, txtSection } = variant;
+  const { banner, firstbg, textColor, id, txtSection, about } = variant;
 
   return (
     <>
@@ -64,7 +64,12 @@ export default function Victoria() {
             img={txtSection.img}
             gradient={txtSection.gradient}
           />
-          <About />
+          <About
+            roseR={about.roseR}
+            rosel={about.roseL}
+            heart={about.heart}
+            itemClass={about.itemClass}
+          />
         </div>
         <SuccessRate />
         <TargeTAudience />

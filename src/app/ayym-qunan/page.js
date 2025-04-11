@@ -12,7 +12,7 @@ import { variantsData } from "@/utils/variantsData";
 export default function Ayym() {
   const variant = variantsData.find((v) => v.id === "ayym-qunan");
 
-  const { banner, firstbg, textColor, id, txtSection } = variant;
+  const { banner, firstbg, textColor, id, txtSection, about } = variant;
 
   return (
     <>
@@ -63,7 +63,12 @@ export default function Ayym() {
             gradient={txtSection.gradient}
             img={txtSection.img}
           />
-          <About />
+          <About
+            roseR={about.roseR}
+            rosel={about.roseL}
+            heart={about.heart}
+            itemClass={about.itemClass}
+          />
         </div>
         <SuccessRate />
         <TargeTAudience />

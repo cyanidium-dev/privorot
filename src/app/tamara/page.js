@@ -14,7 +14,7 @@ export default function Tamara() {
 
   if (!variant) return null;
 
-  const { banner, firstbg, textColor, id, txtSection } = variant;
+  const { banner, firstbg, textColor, id, txtSection, about } = variant;
 
   return (
     <>
@@ -65,7 +65,12 @@ export default function Tamara() {
             img={txtSection.img}
             gradient={txtSection.gradient}
           />
-          <About />
+          <About
+            roseR={about.roseR}
+            rosel={about.roseL}
+            heart={about.heart}
+            itemClass={about.itemClass}
+          />
         </div>
         <SuccessRate />
         <TargeTAudience />
